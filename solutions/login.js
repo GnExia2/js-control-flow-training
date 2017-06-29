@@ -2,13 +2,13 @@ console.log("login.js loaded");
 
 var userLogin = {userName: "octocat_rules", password: "abacadabra"}
 
-var passwordInput;
+var inputPassword;
 
 var loggedIn = false;
 
 while (!loggedIn){
-	passwordInput = prompt("Enter password for user " + userLogin.userName + ".")
-	if (passwordInput === userLogin.password){
+	inputPassword = prompt("Enter password for user " + userLogin.userName + ".")
+	if (inputPassword === userLogin.password){
 		console.log("Passwords match!");
     loggedIn = true;
 	} else {

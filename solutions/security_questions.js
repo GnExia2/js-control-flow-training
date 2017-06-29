@@ -15,18 +15,18 @@ var securityQuestions = [
 	}
 ]
 
-var userAnswer = "";
-var hacker = false;
+var Answer = "";
+var nonUser = false;
 
 for (var i=0; i < securityQuestions.length; i++){
-	userAnswer = prompt(securityQuestions[i].question);
-	if (userAnswer !== securityQuestions[i].expectedAnswer){
-		alert("Incorrect security question response!");
-    hacker = true;
+		Answer = prompt(securityQuestions[i].question);
+	if (Answer !== securityQuestions[i].expectedAnswer){
+		alert("Incorrect");
+    nonUser = true;
 		break;
 	}
 }
 
-if (hacker){
-  console.log("Stop!");
+if (nonUser){
+  console.log("You've Been Locked Out");
 }
